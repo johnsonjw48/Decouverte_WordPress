@@ -7,9 +7,13 @@ Ce projet permet de lancer rapidement un environnement WordPress complet avec Do
 
 ## 📚 Guides disponibles
 
+### Développement
 - **[README.md](./README.md)** (ce fichier) - Développement local
-- **[QUICKSTART-DEPLOY.md](./QUICKSTART-DEPLOY.md)** - Déploiement rapide sur VPS
-- **[DEPLOY.md](./DEPLOY.md)** - Guide complet de déploiement en production
+
+### Déploiement en production
+- **[DEPLOY-WITH-NGINX.md](./DEPLOY-WITH-NGINX.md)** - ⭐ Déploiement avec nginx existant (recommandé)
+- **[QUICKSTART-DEPLOY.md](./QUICKSTART-DEPLOY.md)** - Déploiement rapide (VPS vierge)
+- **[DEPLOY.md](./DEPLOY.md)** - Guide complet de déploiement
 
 ---
 
