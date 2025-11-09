@@ -5,7 +5,19 @@ Ce projet permet de lancer rapidement un environnement WordPress complet avec Do
 - **MySQL 8.0** (base de données)
 - **PhpMyAdmin** (interface de gestion de base de données)
 
-## Prérequis
+## 📚 Guides disponibles
+
+- **[README.md](./README.md)** (ce fichier) - Développement local
+- **[QUICKSTART-DEPLOY.md](./QUICKSTART-DEPLOY.md)** - Déploiement rapide sur VPS
+- **[DEPLOY.md](./DEPLOY.md)** - Guide complet de déploiement en production
+
+---
+
+## Développement Local
+
+Ce guide est pour le **développement en local** sur votre machine.
+
+### Prérequis
 
 - [Docker](https://docs.docker.com/get-docker/) installé
 - [Docker Compose](https://docs.docker.com/compose/install/) installé

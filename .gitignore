@@ -1,9 +1,15 @@
 # Fichier de configuration avec informations sensibles
 .env
+.env.production
 
 # Données WordPress et MySQL (volumes Docker)
 wordpress_data/
 db_data/
+
+# Nginx et SSL
+certbot/conf/
+certbot/www/
+nginx/conf.d/wordpress.conf
 
 # Logs
 *.log
