@@ -1,0 +1,20 @@
+# Fichier de configuration avec informations sensibles
+.env
+
+# Données WordPress et MySQL (volumes Docker)
+wordpress_data/
+db_data/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
