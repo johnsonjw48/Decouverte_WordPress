@@ -28,6 +28,25 @@ Ce guide est pour le **développement en local** sur votre machine.
 
 ## Installation
 
+### 🚀 Installation rapide avec Makefile
+
+```bash
+# 1. Cloner le projet
+git clone <url-du-repo>
+cd Decouverte_WordPress
+
+# 2. Premier lancement (copie .env et démarre)
+make install
+
+# 3. Voir l'état
+make ps
+
+# 4. Accéder à WordPress
+# → http://localhost:8080
+```
+
+### 📝 Installation manuelle
+
 1. **Cloner le projet** (si ce n'est pas déjà fait)
    ```bash
    git clone <url-du-repo>
@@ -45,6 +64,8 @@ Ce guide est pour le **développement en local** sur votre machine.
 3. **Lancer les containers Docker**
    ```bash
    docker-compose up -d
+   # ou
+   make up
    ```
 
    Cette commande va :
@@ -79,22 +100,42 @@ Une fois les containers démarrés, vous pouvez accéder à :
 
 ## Commandes utiles
 
-### Démarrer les containers
+### 🎯 Avec Makefile (recommandé)
+
+```bash
+make help       # Affiche toutes les commandes
+make up         # Démarre les containers
+make down       # Arrête les containers
+make restart    # Redémarre les containers
+make ps         # État des containers (formaté)
+make logs       # Logs de tous les containers
+make logs-wp    # Logs WordPress uniquement
+make logs-db    # Logs MySQL uniquement
+make shell      # Shell dans le container WordPress
+make shell-db   # Shell MySQL
+make backup     # Sauvegarde la base de données
+make status     # Infos détaillées (CPU, RAM)
+make clean      # Supprime tout (⚠️ destructif)
+```
+
+### 📦 Commandes Docker manuelles
+
+#### Démarrer les containers
 ```bash
 docker-compose up -d
 ```
 
-### Arrêter les containers
+#### Arrêter les containers
 ```bash
 docker-compose down
 ```
 
-### Arrêter et supprimer les volumes (⚠️ supprime les données)
+#### Arrêter et supprimer les volumes (⚠️ supprime les données)
 ```bash
 docker-compose down -v
 ```
 
-### Voir les logs
+#### Voir les logs
 ```bash
 # Tous les services
 docker-compose logs -f
@@ -104,16 +145,6 @@ docker-compose logs -f wordpress
 
 # MySQL uniquement
 docker-compose logs -f db
-```
-
-### Redémarrer les services
-```bash
-docker-compose restart
-```
-
-### Voir l'état des containers
-```bash
-docker-compose ps
 ```
 
 ## Configuration
